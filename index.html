@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turismo Sportivo</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main-container">
+    <header>
+      <div class="header-content">
+        <h1>Trova Attività Sportiva</h1>
+        <p>Sei in vacanza e vuoi fare sport oggi stesso? Cerca le opportunità vicino a te</p>
+      </div>
+    </header>
+
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Inserisci il nome del comune...">
+      <button id="search-btn">Cerca</button>
+      <button id="reset-btn">Ripristina</button> <!-- Tasto Ripristina -->
+    </div>
+
+    <div class="distance-selection">
+      <label for="distance">Distanza massima:</label>
+      <select id="distance">
+        <option value="5">5 km</option>
+        <option value="10">10 km</option>
+        <option value="15">15 km</option>
+        <option value="20">20 km</option>
+        <option value="50">50 km</option>
+      </select>
+    </div>
+
+    <div id="loading-bar-container">
+      <div id="loading-bar"></div>
+    </div>
+
+    <div id="results-container"></div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Turismo Sportivo. Tutti i diritti riservati.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
